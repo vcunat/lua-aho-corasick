@@ -70,7 +70,7 @@ LIBAC_A_SRC := $(LIBAC_SO_SRC)          # source for libac.a
 all : $(C_SO_NAME) $(LUA_SO_NAME) $(AR_NAME)
 
 -include c_so_dep.txt
--include lua_so_dep.txt
+#-include lua_so_dep.txt # causes problems in knot-resolver's GitLab CI
 -include ar_dep.txt
 
 BUILD_SO_DIR := build_so
